@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayan Mobile Shop</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { line-height: 1.6; }
+    header { background: #0b2c44; padding: 15px 40px; }
+    header nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    header nav a:hover { text-decoration: underline; }
+
+    /* HOME SLIDER */
+    .slider { height: 90vh; background-size: cover; background-position: center; animation: slide 15s infinite; display: flex; align-items: center; justify-content: center; color: #fff; }
+    .slider h1 { font-size: 48px; background: rgba(0,0,0,0.6); padding: 20px; border-radius: 8px; }
+    @keyframes slide {
+      0% { background-image: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70'); }
+      33% { background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee'); }
+      66% { background-image: url('https://images.unsplash.com/photo-1529070538774-1843cb3265df'); }
+    }
+
+    section { padding: 60px 40px; }
+    h2 { text-align: center; margin-bottom: 30px; color: #0b2c44; }
+
+    /* ABOUT */
+    .about { display: flex; gap: 40px; align-items: center; }
+    .about img { width: 50%; border-radius: 10px; }
+    .about-text { width: 50%; }
+
+    /* SERVICES */
+    .services-text { text-align: center; max-width: 700px; margin: auto; margin-bottom: 40px; }
+    .service-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .service-grid img { width: 100%; border-radius: 10px; }
+
+    /* CONTACT */
+    .contact { background: #f4f4f4; }
+    .contact-form { max-width: 600px; margin: auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .contact-form input, .contact-form textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; }
+    .contact-form button { background: #0b2c44; color: #fff; padding: 12px; border: none; width: 100%; font-size: 16px; cursor: pointer; }
+
+    footer { text-align: center; padding: 20px; background: #0b2c44; color: #fff; }
+
+    @media(max-width: 900px) {
+      .about { flex-direction: column; }
+      .about img, .about-text { width: 100%; }
+      .service-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+</header>
+
+<!-- HOME -->
+<div class="slider" id="home">
+  <h1>Welcome to Ayan Mobile Shop</h1>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Us</h2>
+  <div class="about">
+    <div class="about-text">
+      <p>Ayan Mobile Shop is a trusted mobile store offering the latest smartphones, accessories, and reliable mobile solutions. Our mission is to provide genuine products, affordable prices, and excellent customer service.</p><p>With experience in the mobile industry, we help customers choose the right device that fits their needs and budget.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="About Image">
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2>Our Mobile Services</h2>
+  <div class="services-text">
+    <p>We offer complete mobile solutions including sales, accessories, and technical support.</p>
+  </div>
+  <div class="service-grid">
+    <img src="https://images.unsplash.com/photo-1493238792000-8113da705763" alt="Service 1">
+    <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429" alt="Service 2">
+    <img src="https://images.unsplash.com/photo-1519648023493-d82b5f8d7b8a" alt="Service 3">
+    <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7" alt="Service 4">
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-form">
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button>Send Message</button>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 All Rights Reserved | Ayan Mobile Shop</p>
+</footer>
+
+</body>
+</html>
